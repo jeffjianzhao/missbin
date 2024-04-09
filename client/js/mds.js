@@ -5,7 +5,7 @@
  *
  * 
  * @author
- * Jian Zhao <zhao@fxpal.com>
+ * Jian Zhao <https://github.com/jeffjianzhao>
  *
  *************************************************************************/
 

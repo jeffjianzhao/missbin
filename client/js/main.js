@@ -5,7 +5,7 @@
  *
  * 
  * @author
- * Jian Zhao <zhao@fxpal.com>
+ * Jian Zhao <https://github.com/jeffjianzhao>
  *
  *************************************************************************/
 
@@ -20,7 +20,9 @@ window.visapp = {};
 visapp.datamodel = new DataModel();
 
 var app_parameter = {
-	data: 'data/crescent.json'
+	// need to consistent with the data folder on the server side
+	data: 'data/crescent.json',
+	prediction_methods: ['none', 'bc_adamic_adar', 'bc_common_neighbors', 'bc_jaccard', 'bc_preferential_attachement', 'bc_random_walk']
 };
 
 $(document).ready(function() {
@@ -41,6 +43,10 @@ $(document).ready(function() {
 
 
 function initUI() {
+	app_parameter.prediction_methods.forEach(element => {
+		$('#method').add('<option>' + element + '</option>')
+	});
+
 	$('#method').selectmenu({ 
 		change: function(event, ui) {
 			visapp.datamodel.predict(ui.item.value);

@@ -5,7 +5,7 @@
  *
  * 
  * @author
- * Jian Zhao <zhao@fxpal.com>
+ * Jian Zhao <https://github.com/jeffjianzhao>
  *
  *************************************************************************/
 
@@ -17,6 +17,7 @@ const spawn = require('child_process').spawnSync;
 
 var mbea = __dirname + '/../libs/MBEA',
 	pygraph = __dirname + '/../libs/computegraph.py',
+	path = require('path'),
 	tmpdir = 'tmp/';
 	
 
@@ -28,7 +29,7 @@ module.exports = function(app) {
 router.route('/linkpredict')
 	.get(function(req, res) {
 		var data = JSON.parse(fs.readFileSync(__dirname + '/../data/' 
-			+ req.query.datafile + '-' + req.query.method + '.json'));	
+			+ path.parse(req.query.datafile).name + '-' + req.query.method + '.json'));	
 		res.json(data);
 	});
 

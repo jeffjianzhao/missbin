@@ -1,8 +1,8 @@
 {
-  "name": "bigmissingviz",
+  "name": "missbin",
   "version": "0.0.1",
-  "description": "bigmissingviz",
-  "author": "Jian Zhao <zhao@fxpal.com>",
+  "description": "A visual analysis tool for detecting and examining missing links in bipartite networks",
+  "author": "Jian Zhao <https://github.com/jeffjianzhao>",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
