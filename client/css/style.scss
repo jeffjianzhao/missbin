@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic);
+
+$main-font: 'Roboto', sans-serif;
+$highlight-color: crimson;
+
+body {
+	min-width: 1500px;
+	font-family: $main-font;
+}
+
+#toolbar {
+	margin: 10px;
+	height: 30px;
+	width: 100%;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+
+	label {
+		font-size: 14px;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+}
+
+#method-button,
+#rowsort-button,
+#colsort-button, 
+#sort-button {
+	width: 100px;
+}
+
+#threshold {
+	margin: 0 5px;
+	width: 100px;
+	display: inline-block;
+}
+
+#matrixview, 
+#linkview,  
+#clusterview,
+#mdsview {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	display: inline-block;
+	vertical-align: top;
+	overflow: auto;
+}
+
+#tableview {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 11px;
+
+	.highlight {
+		color: $highlight-color;
+	}
+}
+
+#infopanel {
+	width: 1280px;
+	margin: 2px;
+	padding: 2px 10px;
+	display: inline-block;
+	font-size: 12px;
+	font-style: italic;
+}
+
+// #linkview {
+// 	width: 1280px;
+// 	height: 25px;
+// 	margin: 3px;
+// 	display: inline-block;
+
+// 	.linkspan {
+// 		cursor: pointer;
+// 		font-size: 12px;
+// 		border: 1px solid gray;
+// 		border-radius: 5px;
+// 		padding: 2px;
+// 		margin: 2px;
+
+// 		&:hover {
+// 			background-color: $highlight-color;
+// 		}	
+// 	}
+// }
+
+
+
+.tbox {
+	fill-opacity: 0.5;
+	fill: $highlight-color;
+	visibility: hidden;
+	stroke: $highlight-color;
+
+	&.highlight {
+		visibility: visible;
+	}
+}
+
+.tlabel {
+	font-size: 9px;
+	alignment-baseline: central;
+	cursor: pointer;
+
+	&.row {
+		text-anchor: end;
+	}
+
+	&.col {
+		text-anchor: start;
+	}
+
+	&.highlight {
+		fill: $highlight-color;
+		font-weight: bold;
+	}
+}
+
+//#matrixview 
+.link {
+	stroke: white;
+	stroke-opacity: 1.0;
+
+	&.highlight {
+		stroke: black;
+		stroke-width: 2px;
+		stroke-opacity: 1.0;
+	}
+
+	&.added {
+		stroke: black;
+		stroke-width: 2px;
+		stroke-opacity: 0.8;
+	}
+}
+
+.linkitem {
+	text {
+		font-size: 10px;
+		alignment-baseline: central;
+	}
+
+	&.highlight {
+		.link {
+			stroke: black;
+			stroke-width: 2px;
+			stroke-opacity: 1.0;
+		}
+
+		text {
+			fill: $highlight-color;
+			font-weight: bold;
+		}
+	}
+}
+
+// #clusterview .link {
+// 	stroke-width: 2px;
+
+// 	&.highlight {
+// 		stroke-width: 3px;
+// 		stroke-opacity: 1.0;
+// 	}
+// }
+
+.bicluster {
+	.bicrect {
+		fill: white;
+	}
+
+	&.highlight .bicrect {
+		stroke-width: 2px;
+	}
+}
+
+.biclink {
+	stroke: black;
+	fill: none;
+	stroke-opacity: 0.4;
+	visibility: hidden;
+
+	&.highlight {
+		visibility: visible;
+	}
+}
+
+.bicdot {
+	stroke: white;
+	fill-opacity: 0.5;
+
+	&.highlight {
+		stroke: black;
+		stroke-width: 2px;
+		stroke-opacity: 1.0;
+	}
+}
+
+
+
+

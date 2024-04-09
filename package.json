@@ -1,0 +1,36 @@
+{
+  "name": "bigmissingviz",
+  "version": "0.0.1",
+  "description": "bigmissingviz",
+  "author": "Jian Zhao <zhao@fxpal.com>",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "clusterfck": "^1.0.0",
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.3.0",
+    "numeric": "^1.2.6",
+    "underscore": "^1.13.6"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "gulp": "^5.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "sass": "^1.74.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "license": "MIT",
+  "private": true
+}

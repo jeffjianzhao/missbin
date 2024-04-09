@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MissingViz</title>
+	<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/jquery-ui/themes/base/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/datatables/media/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" type='text/css' href="css/style.css">
+
+	<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="components/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="components/datatables/media/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="components/d3/d3.min.js"></script>
+	<script type="text/javascript" src="components/d3-scale-chromatic/d3-interpolate.v1.min.js"></script>
+	<script type="text/javascript" src="components/d3-scale-chromatic/d3-scale-chromatic.v1.min.js"></script>
+</head>
+<body>
+	<div id="toolbar">
+		<label>Link detection</label>
+		<select id="method">
+			<option>bc_adamic_adar</option>
+			<option>bc_common_neighbors</option>
+			<option>bc_jaccard</option>
+			<option>bc_preferential_attachement</option>
+			<option>bc_random_walk</option>
+		</select>
+		<label>Score filter</label>
+		<div id="threshold"></div>
+		<label>Matrix order</label>
+		<select id="sort">
+			<option>by id</option>
+			<option>by avg-score</option>
+			<option>by total-number</option>
+			<option>by cluster</option>
+		</select>
+		<button id="compute">Compute Motifs and Metrics</button>
+<!-- 		<label>Bicluster order</label>
+		<select id="bicsort">
+			<option>by size</option>
+			<option>by type</option>
+		</select> -->
+		<span style="margin: 0px 10px;">
+			<label>Existing link</label>
+			<svg id="legend1" width="90" height="30"></svg>
+			<label>Missing link</label>
+			<svg id="legend2" width="90" height="30"></svg>
+		</span>
+	</div>
+	<div style="margin: 2px 0px;">
+		<div id="matrixview"></div>
+		<div id="linkview"></div>
+		<div id="clusterview"></div>
+	</div>
+	<div style="margin: 2px 0px;">
+		<div id="tableview"></div>
+		<div id="mdsview"></div>	
+	</div>
+	<div id="infopanel"></div>
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

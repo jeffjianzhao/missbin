@@ -1,0 +1,23 @@
+{
+  "name": "my-app",
+  "authors": [
+    "Jian Zhao <jeffjianzhao@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.9.1",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "jquery-ui": "^1.12.1",
+    "d3-scale-chromatic": "^1.1.1",
+    "datatables": "^1.10.16"
+  }
+}

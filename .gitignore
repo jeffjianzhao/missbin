@@ -1,0 +1,16 @@
+results/
+outputs/
+expdata/
+__pycache__
+
+
+node_modules/
+public/
+data/
+tmp/
+
+libs/lcm
+libs/MBEA
+
+*.pyc
+.DS_Store
