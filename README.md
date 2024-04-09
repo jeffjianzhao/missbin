@@ -2,6 +2,7 @@
 MissBiN is a visual analysis tool for detecting and examining missing links in bipartite networks. Details about the tool can be found in our publications below.
 
 >Jian Zhao, Maoyuan Sun, Francine Chen, Patrick Chiu. Understanding Missing Links in Bipartite Networks with MissBiN. IEEE Transactions on Visualization and Computer Graphics, 28(6), pp. 2457-2469, 2022.
+
 >Jian Zhao, Maoyuan Sun, Francine Chen, Patrick Chiu. MissBiN: Visual Analysis of Missing Links in Bipartite Networks. Proceedings of the IEEE Visualization and Visual Analytics Conference, pp. 71-75, 2019.
 
 <img src="https://www.jeffjianzhao.com/paper-imgs/missbin.png" width="100%" />
