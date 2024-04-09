@@ -59,7 +59,7 @@ Examples are provided based on the Crescent dataset [1] in `data/`, which includ
 
 [1] Hughes, F., & Schum, D. (2003). Discovery-proof-choice, the art and science of the process of intelligence analysis-preparing for the future of intelligence analysis. Washington, DC: Joint Military Intelligence College.
 
-# Required Packages
+# Required Software
 
 [Node.js](https://nodejs.org/en) is required to run the code. This code is tested with:
 * Node.js v20.12.1
@@ -69,7 +69,7 @@ Examples are provided based on the Crescent dataset [1] in `data/`, which includ
 
 [NetworkX](https://networkx.org/) is used to calculate various network metrics, which is required by `libs/computegraph.py`.  
 
-[clusterfck]() is used to perform hierarchical clustering on the network nodes. Since this package is no longer available on npm, you need to manually install it (see below).
+[clusterfck]() is needed to perform hierarchical clustering on the network nodes. Since this package is no longer available on npm, you need to manually install it (see below).
 
 # MissBiN Web Application
 
